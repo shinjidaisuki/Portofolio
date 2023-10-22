@@ -1,0 +1,282 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Courier;
+}
+.blacktext{
+  color: black;
+}
+.whitetext{
+  color: #DCDCDC;
+}
+.bglinear{
+  background: linear-gradient(to top,#000713,#001727,#000713);
+}
+.off {
+  display: none;
+}
+.fade{
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+              /* BODY */
+
+.container{
+  width: 100vw;
+  /* background-color:#002E4E; */
+  
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background:linear-gradient(#001727 20% ,#000713 );
+  z-index: 10;
+  animation: up 3s ease forwards;
+}
+.a-nav{
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+}
+.btn-nav{
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ background-color: transparent;
+ text-align: center;
+ line-height: center;
+}
+.btn-navk{
+  background:radial-gradient(black 10%,white) ;
+  color: black;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* NAVBAR2 */
+
+.nav2{
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #00172790;
+  z-index: 9;
+  animation: up2 1s;
+}
+.nav2 ul{
+  width: 100%;
+}
+.nav2 ul li{
+  text-align: center;
+}
+.a-nav2{
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(0,0,0,0);
+  padding: 3px 5px;
+  border-radius: 10px;
+  color: #eaeaea;
+}
+.allspan{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
+  text-align: center;
+  bottom:20px;
+  height: 20px;
+  
+}
+.Cotext,.gantiBG,.reset{
+  border: 1px Solid black;
+  border-radius: 8px;
+  margin: 0 8px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7em;
+  animation: kedip 1s forwards;
+  animation-iteration-count: 999;
+}
+
+/* VIEWER */
+
+.viewer{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: fixed;
+  marginleft;
+}
+.view{
+  width: 70%;
+  height: 50%;
+  background-color:#00172790 ;
+  border: 1px solid #eaeaea;
+  margin: auto;
+  margin-top:40%;
+  position: relative;
+  box-shadow: 0px 0px 1px 2px black,0px 0px 0px 3px white;
+}
+.nold{
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.noldh3 {
+  font-size: 2em;
+  text-align: center;
+  line-height: 100%
+  padding: 5px;
+  text-shadow: 4px 2px 2px rgba(150,0,0,0.9);
+}
+.btnx{
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  position: absolute;
+  right:-23px;
+  bottom: -4px;
+}
+
+
+      /* MAIN */
+
+.main{
+  width:100vw;
+}
+
+    /* ABOUT */
+
+
+.about{
+  height: 100vh;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+.imgu{
+  
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url('nold.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border-radius: 20px ;
+  box-shadow: 3px 5px 3px 0px rgba(0,0,0,0.5);
+}
+.imgu2{
+  opacity: 0.3;
+}
+.h2a{
+  margin-top: 10px;
+  /* text-shadow: 5px 3px 5px 3px rgba(0,0,0,0.5); */
+}
+
+/* DATA DIRI */
+
+.cv{
+  margin-top: 20px;
+}
+
+.h3p{
+  
+}
+.pp{
+  
+}
+.table{
+  
+}
+
+/* PENGALAMAN KERJA */
+
+.pk{
+  margin-top: 20px;
+}
+.h3pk{
+  
+}
+.ulpk{
+  
+}
+.lipk{
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* PENGUASAAN BAHASA */
+.pb{
+  margin-top: 20px;
+}
+.h3pb{
+  
+}
+
+.project{
+  height: 100vh;
+}
+.project h3{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.contact{
+  height: 92vh;
+}
+.alamat h3{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes up{
+  0%{
+    top: 100%;
+  }
+  90%{
+    top: -10%;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+@keyframes up2{
+  0%{
+    top: 100%;
+  }
+  100%{
+    top: 6%;
+  }
+}
+@keyframes kedip{
+  0%{
+    opacity: 1;
+  }50%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}
