@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Courier;
 }
+.h1cont{
+  display: none;
+}
 .blacktext{
   color: black;
 }
@@ -278,5 +281,20 @@
     opacity: 0;
   }100%{
     opacity: 1;
+  }
+}
+
+@media screen and (min-width:577px){
+  .main{
+    display: none;
+  }
+  .h1cont{
+    height: 200px;
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 50px;
+    margin-right: 50%;
   }
 }
